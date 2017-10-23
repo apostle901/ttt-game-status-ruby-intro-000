@@ -25,3 +25,10 @@ end
 def over?(board)
   full?(board) || won?(board)
 end
+
+def winner(board)
+  result = won?(board)
+  return result[0] if result
+  false
+end
+    
