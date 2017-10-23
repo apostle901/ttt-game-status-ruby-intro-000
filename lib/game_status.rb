@@ -28,6 +28,6 @@ end
 
 def winner(board)
   result = won?(board)
-  return result[0] if result
+  return board[result] if result
   return
 end
